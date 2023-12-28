@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Articles by Teyim Asobo</title>
-        <link>https://markdown-blog-ten-beta.vercel.app/</link>
-        <description>U can find me on all platforms like twitter,github and linkedIn.pretty nerdy? ,yes i know. I am also on facebook and instagram too, not sharing hot pics though..i have a passion for frontend development</description>
-        <lastBuildDate>Tue, 15 Mar 2022 18:20:30 GMT</lastBuildDate>
+        <title>Articles by Mike Irlbeck</title>
+        <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app</link>
+        <description>Here are articles written by Mike Irlbeck who has a passion for software engineering, philosophy, theology, and writing.</description>
+        <lastBuildDate>Thu, 28 Dec 2023 16:51:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
             <title><![CDATA[Mastering JavaScript]]></title>
-            <link>https://markdown-blog-ten-beta.vercel.app//mastering-javascript</link>
-            <guid>https://markdown-blog-ten-beta.vercel.app//mastering-javascript</guid>
+            <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/mastering-javascript</link>
+            <guid>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/mastering-javascript</guid>
             <pubDate>Thu, 03 Mar 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 JavaScript powers the web - it's **the** most important programming language you need to know as a web developer.
@@ -30,12 +30,12 @@ printBasics();
 
 Learn more about it [here](https://academind.com).
 ]]></content:encoded>
-            <author>teyimasobo@gmail.com (Teyim Asobo)</author>
+            <author>software.mikeirlbeck@gmail.com (Mike Irlbeck)</author>
         </item>
         <item>
             <title><![CDATA[Handy css trick to save time]]></title>
-            <link>https://markdown-blog-ten-beta.vercel.app//handy-css-trick</link>
-            <guid>https://markdown-blog-ten-beta.vercel.app//handy-css-trick</guid>
+            <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/handy-css-trick</link>
+            <guid>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/handy-css-trick</guid>
             <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 Wondering why centering a div is a big problem for most developers?thats because css is hard.
@@ -70,12 +70,12 @@ there u go..now you can center a div properly.
 
 
 ]]></content:encoded>
-            <author>teyimasobo@gmail.com (Teyim Asobo)</author>
+            <author>software.mikeirlbeck@gmail.com (Mike Irlbeck)</author>
         </item>
         <item>
             <title><![CDATA[Getting Started with NextJS]]></title>
-            <link>https://markdown-blog-ten-beta.vercel.app//getting-started-with-nextjs</link>
-            <guid>https://markdown-blog-ten-beta.vercel.app//getting-started-with-nextjs</guid>
+            <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/getting-started-with-nextjs</link>
+            <guid>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/getting-started-with-nextjs</guid>
             <pubDate>Sat, 16 Oct 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 NextJS is a **framework for ReactJS**.
@@ -103,7 +103,7 @@ In this Post, we'll dive into the core concepts and features NextJS has to offer
 ![Create routes via your file + folder structure](getting-started-with-nextjs.png)
 
 ... More content ...]]></content:encoded>
-            <author>teyimasobo@gmail.com (Teyim Asobo)</author>
+            <author>software.mikeirlbeck@gmail.com (Mike Irlbeck)</author>
         </item>
     </channel>
 </rss>
