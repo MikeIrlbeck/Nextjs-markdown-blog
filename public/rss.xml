@@ -4,10 +4,124 @@
         <title>Articles by Mike Irlbeck</title>
         <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app</link>
         <description>Here are articles written by Mike Irlbeck who has a passion for software engineering, philosophy, theology, and writing.</description>
-        <lastBuildDate>Thu, 28 Dec 2023 16:51:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jan 2024 19:41:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[What is a Computer Processor?]]></title>
+            <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/what-is-a-processor</link>
+            <guid>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/what-is-a-processor</guid>
+            <pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+## Introduction
+
+Imagine you are in the kitchen with your family and it is your task to cook a **enormous** meal. Here are your tasks:
+
+- cook a turkey
+- mash your potatoes
+- bake a pie
+- slice bread
+- set the table
+- pray
+- eat all the food
+- cleanup all the dishes
+
+Now if you are alone, you must go through each task one by one and in a sensible sequence:
+
+- skin the potatoes
+- cut the potatoes
+- chop the potatoes
+- boil the water for the potatoes
+- place potatoes in boiling water
+- mash the potatoes
+
+But how wil your workflow change if you have multiple people helping you?
+It will change drastically.
+
+Consider making dinner with your brother Dan:
+You
+
+- drives to the store
+- buys the turkey
+
+While you are completing the tasks above, Dan is doing the following:
+
+- warms up the oven
+- starts melting the butter
+
+As you can see, the tasks can be divided amongst the people helping out. Here are a few key principles:
+
+- some steps require others to occur before them
+- some steps can be performed at the same time (in parllel)
+
+## Processor Analogy
+
+A processor is a piece of hardware that produces an output for an input.
+
+What is hardware?
+Hardware is the physical computer chip.
+
+What is a computer chip?
+A chip is an electrical component that produces an output for an input.
+
+What is an input?
+A physical input could be a single wire carrying 5 volts and 1 amp (5 Watts of power).
+
+What is an output?
+Similar to the input, the output wire could 'carry' a certain charge.
+
+Let's jump back up to a computer chip.
+One example of a computer chip is the ALU (arthimetic logic unit) chip. One function that this chip can perform is adding such as
+
+```bash
+1 + 2 = 3
+```
+
+We won't examine the details here, but different electrical components are wired together to perform the operation above. The number one and two can be represented as a number of wires with different charges, these charges are then manipulated to be added together and then the output wires are set to represent the number three.
+
+---
+
+Before examining the processor, we need to discuss what kind of inputs the processor handles.
+
+The processor can handle machine instructions. These are instructions are tailored to the specific capabilities of the computer and its computer chips. Most computer chips support addition and subtraction, but not all support multiplication and division. Therefore, some machine languages have a **word** for divide (DIV) while others do not.
+
+Example of MIPs machine instructions:
+
+```mips
+ADD R3 R2 R1
+SUB R6 R5 R3
+```
+
+Where do these machine instructions come from?
+The device you are using right now to read these words should seem like an intuitive device to use. You have different applications, a web browser, YouTube, Instagram, a camera. When you want to take a picture, have you ever stopped to ask, how does that work?
+Here is my high-level understanding of how your phone takes a picture.
+
+1. you press the camera application
+2. the screen shows what your camera sees
+3. you press the 'capture' button
+
+But how does that work?
+Each high level action you perform on your phone triggers 10s, 100s, 1,000s, 10,000s, 100,000s, 1,000,000s, and potentially even more machine instructions.
+Every action that you perform on your phone/computer must be distilled into simple instructions that the hardware can perform.
+
+---
+
+Now we are ready to talk about the processor, which is a piece of hardware that produces an output for an input.
+
+And we are now ready to tie this back into our Thanksgiving Dinner.
+
+The processor is like the chef of the kitchen, which needs to organize all the people, and all the ingredients, and the equipment (stove, microwave, etc.).
+The chef needs to ensure that the turkey is purchased from the store and brought into the kitchen prior to the cooking of the turkey.
+
+While the turkey is being dealt with, the mashed potatoes can be chopped and mashing and cooked at the same time.
+
+This is analogous to how the processor deals with thousands of machine instructions and prioritizes them.
+
+Let me know your thoughts, **@Mya**
+]]></content:encoded>
+            <author>software.mikeirlbeck@gmail.com (Mike Irlbeck)</author>
+        </item>
         <item>
             <title><![CDATA[Mastering JavaScript]]></title>
             <link>nextjs-markdown-blog-ihyg2x2j4-mikeirlbeck.vercel.app/mastering-javascript</link>

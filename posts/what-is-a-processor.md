@@ -10,7 +10,7 @@ readTime: '10 min'
 
 ## Introduction
 
-Imagine a you are in with your family in the kitchen. It is your task to cook a **enormous** Thanksgiving meal. Here are your tasks:
+Imagine you are in the kitchen with your family and it is your task to cook a **enormous** meal. Here are your tasks:
 
 - cook a turkey
 - mash your potatoes
@@ -21,19 +21,25 @@ Imagine a you are in with your family in the kitchen. It is your task to cook a 
 - eat all the food
 - cleanup all the dishes
 
-Now if you are alone, you must go through each task one by one and in a sensible sequence.
+Now if you are alone, you must go through each task one by one. Consider creating mashed potatoes:
 
-But how wil your workflow change if you have multiple people helping you?
-It will change drastically.
+1. skin the potatoes
+2. cut the potatoes
+3. boil the water for the potatoes
+4. place potatoes in boiling water
+5. mash the potatoes
 
-Consider the following order
-person 1: drives to the store
-person 2: warms up the oven
+But how wil your workflow change if you have your grandma helping you? It will change drastically.
 
-person 1: buys the ingredients
-person 2: starts melting the butter
+After skinning each potato, you could pass it to your grandma who can start cutting the potatoes while you begin skinning the next potato. In processing, this is called _pipelining_. All modern processors push instructions through different stages of the pipeline. The main stages that instructions pass through are fetch, decode, math operations, memory operations, and write results.
 
-person 1:
+Next, while you and your grandma are preparing the mashed potatoes, your grandpa could be cooking the turkey. This introduces another concept in computing known as _parallelism_, tasks that can be performed independently of one another. Many modern processors support parallelism via multiple cores.
+
+Of course, prior to making mashed potatoes you must get the potatoes from the store. As intuitive as this appears to us, a processor needs to keep this in mind when ordering instructions as some instructions must be performed prior to others. These are known as _data dependencies_.
+
+Prior to serving the food, you are seasoning the food with spices. To get spices, you must walk outside of the kitchen and into the pantry. Instead of walking back and forth each time you want to add some pepper, you bring the pepper shaker with you into the kitchen because you will be using it frequently. This introduces the concept of _locality_, tasks that are performed have a high likelihood of being performed again. In processing, this is similar to how data currently being used is cached or saved nearby as it is likely to be used again.
+
+But how do you know how much food to make? Since you are unable to know the future with perfect certainty, you must make a prediction. Similarly, the processor _predicts_ the future by learn patterns which allows it to begin fetching 'spices' or data prior to the 'recipe' or instruction needing them.
 
 As you can see, the tasks can be divided amongst the people helping out. Here are a few key principles:
 
