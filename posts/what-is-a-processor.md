@@ -1,11 +1,14 @@
 ---
-title: 'What is a Computer Processor?'
-date: '2023-12-29'
-updatedDate: ''
-image: computer-chip.jpeg
+date: "2023-12-29"
 excerpt: A computer processor is an essential piece of the computer system. This intricate component has many interesting parts that will be examined here.
-topic: 'computer-architecture'
-readTime: '10 min'
+image: computer-chip.jpeg
+readTime: 10 min
+runme:
+  id: 01HN8GB3THS327MMW6PB2EJPQP
+  version: v2.2
+title: What is a Computer Processor?
+topic: computer-architecture
+updatedDate: ""
 ---
 
 ## Introduction
@@ -29,7 +32,7 @@ Now if you are alone, you must go through each task one by one. Consider creatin
 4. place potatoes in boiling water
 5. mash the potatoes
 
-But how wil your workflow change if you have your grandma helping you? It will change drastically.
+But how will your workflow change if you have your grandma helping you? It will change drastically.
 
 After skinning each potato, you could pass it to your grandma who can start cutting the potatoes while you begin skinning the next potato. In processing, this is called _pipelining_. All modern processors push instructions through different stages of the pipeline. The main stages that instructions pass through are fetch, decode, math operations, memory operations, and write results.
 
@@ -39,14 +42,14 @@ Of course, prior to making mashed potatoes you must get the potatoes from the st
 
 Prior to serving the food, you are seasoning the food with spices. To get spices, you must walk outside of the kitchen and into the pantry. Instead of walking back and forth each time you want to add some pepper, you bring the pepper shaker with you into the kitchen because you will be using it frequently. This introduces the concept of _locality_, tasks that are performed have a high likelihood of being performed again. In processing, this is similar to how data currently being used is cached or saved nearby as it is likely to be used again.
 
-But how do you know how much food to make? Since you are unable to know the future with perfect certainty, you must make a prediction. Similarly, the processor _predicts_ the future by learn patterns which allows it to begin fetching 'spices' or data prior to the 'recipe' or instruction needing them.
+But how do you know how much food to make? Since you are unable to know the future with perfect certainty, you must make a prediction. Similarly, the processor _predicts_ the future by learning patterns which allows it to begin fetching 'spices' or data prior to the 'recipe' or instruction needing them.
 
 As you can see, the tasks can be divided amongst the people helping out. Here are a few key principles:
 
 - some steps require others to occur before them
 - some steps can be performed at the same time (in parllel)
 
-## Processor Analogy
+## Breaking Down a Processor
 
 A processor is a piece of hardware that produces an output for an input.
 
@@ -65,7 +68,7 @@ Similar to the input, the output wire could 'carry' a certain charge.
 Let's jump back up to a computer chip.
 One example of a computer chip is the ALU (arthimetic logic unit) chip. One function that this chip can perform is adding such as
 
-```bash
+```bash {"id":"01HN8GB3THS327MMW6PAB0TKA9"}
 1 + 2 = 3
 ```
 
@@ -75,38 +78,35 @@ We won't examine the details here, but different electrical components are wired
 
 Before examining the processor, we need to discuss what kind of inputs the processor handles.
 
-The processor can handle machine instructions. These are instructions are tailored to the specific capabilities of the computer and its computer chips. Most computer chips support addition and subtraction, but not all support multiplication and division. Therefore, some machine languages have a **word** for divide (DIV) while others do not.
+The processor can handle machine instructions. These instructions are tailored to the specific capabilities of the computer and its computer chips. Most computer chips support addition and subtraction, but not all support multiplication and division. Therefore, some machine languages have a **word** for divide (DIV) while others do not.
 
 Example of MIPs machine instructions:
 
-```mips
+```mips {"id":"01HN8GB3THS327MMW6PADJ9YR4"}
 ADD R3 R2 R1
 SUB R6 R5 R3
 ```
 
 Where do these machine instructions come from?
-The device you are using right now to read these words should seem like an intuitive device to use. You have different applications, a web browser, YouTube, Instagram, a camera. When you want to take a picture, have you ever stopped to ask, how does that work?
-Here is my high-level understanding of how your phone takes a picture.
+
+The device you are using right now to read these words should seem like an intuitive device to use. You have different applications: a web browser, YouTube, Instagram, a camera. 
+
+For those non-photographers out there, here is how to take a picture:
 
 1. you press the camera application
 2. the screen shows what your camera sees
 3. you press the 'capture' button
 
-But how does that work?
+Have you ever stopped to ask, how does that work?
+
 Each high level action you perform on your phone triggers 10s, 100s, 1,000s, 10,000s, 100,000s, 1,000,000s, and potentially even more machine instructions.
-Every action that you perform on your phone/computer must be distilled into simple instructions that the hardware can perform.
 
----
+**Takeaway:** Every action that you perform on your phone/computer must be distilled into simple instructions that the hardware can perform.
 
-Now we are ready to talk about the processor, which is a piece of hardware that produces an output for an input.
+## Conclusion
 
-And we are now ready to tie this back into our Thanksgiving Dinner.
+As we have just seen, a processor is a piece of hardware that produces an output for an input.
 
-The processor is like the chef of the kitchen, which needs to organize all the people, and all the ingredients, and the equipment (stove, microwave, etc.).
-The chef needs to ensure that the turkey is purchased from the store and brought into the kitchen prior to the cooking of the turkey.
+In relation to our Thanksgiving dinner, the processor is the entire family partaking in cooking. The dinner receipe is decomposed into small steps that one person can perform. The ingredients are the inputs that must be gathered (fetched), prepared (decoded), cooked and combined (math operations), put aside for a later step (memory operations), and finally presented to be eaten (written). All of these steps come together to yield a specific output - a delicious meal.
 
-While the turkey is being dealt with, the mashed potatoes can be chopped and mashing and cooked at the same time.
-
-This is analogous to how the processor deals with thousands of machine instructions and prioritizes them.
-
-Let me know your thoughts, **@Mya**
+Thank you for reading.
